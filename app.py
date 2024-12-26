@@ -19,8 +19,8 @@ load_dotenv()
 
 #OPENAI_API_KEY = os.getenv('GOOGLE_API_KEY')
 #OPENAI_API_KEY = os.getenv('TAVILY_API_KEY')
-os.environ['TAVILY_API_KEY'] = st.secrets['TAVILY_KEY']
-os.environ['GOOGLE_API_KEY'] = st.secrets['GEMINI_KEY']
+os.environ['TAVILY_API_KEY'] = st.secrets['TAVILY']
+os.environ['GOOGLE_API_KEY'] = st.secrets['GEMINI']
 MAX_IMAGE_WIDTH = 300
 
 def resize_image_for_display(image_file):
